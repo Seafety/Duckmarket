@@ -29,8 +29,9 @@ public class Empresa {
         this.limite = limite;
     }
 
-    public Empresa(Long idConta, String nomeConta, double saldo, double limite) {
+    public Empresa(Long idConta, Long idUsuario, String nomeConta, double saldo, double limite) {
         this.idConta = idConta;
+        this.idUsuario = idUsuario;
         this.nomeConta = nomeConta;
         this.saldo = saldo;
         this.limite = limite;

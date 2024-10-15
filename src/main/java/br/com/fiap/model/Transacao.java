@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Transacao {
     private Long idTransacao;
-    private Integer idConta;
-    private Integer idCriptoativo;
+    private Long idConta;
+    private Long idCriptoativo;
     private String tipotransacao;
     private Double qtdTransacao;
     private Double precoUnitario;
@@ -15,7 +15,7 @@ public class Transacao {
 
     }
 
-    public Transacao(Long idTransacao, Integer idConta, Integer idCriptoativo, String tipotransacao, Double qtdTransacao, Double precoUnitario, java.sql.Date dtTransacao) {
+    public Transacao(Long idTransacao, Long idConta, Long idCriptoativo, String tipotransacao, Double qtdTransacao, Double precoUnitario, java.sql.Date dtTransacao) {
         this.idTransacao = idTransacao;
         this.idConta = idConta;
         this.idCriptoativo = idCriptoativo;
@@ -47,19 +47,19 @@ public class Transacao {
         this.idTransacao = idTransacao;
     }
 
-    public Integer getIdConta() {
+    public Long getIdConta() {
         return idConta;
     }
 
-    public void setIdConta(Integer idConta) {
+    public void setIdConta(Long idConta) {
         this.idConta = idConta;
     }
 
-    public Integer getIdCriptoativo() {
+    public Long getIdCriptoativo() {
         return idCriptoativo;
     }
 
-    public void setIdCriptoativo(Integer idCriptoativo) {
+    public void setIdCriptoativo(Long idCriptoativo) {
         this.idCriptoativo = idCriptoativo;
     }
 

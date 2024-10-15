@@ -41,11 +41,12 @@ public class EmpresaDao {
     }
 
     private Empresa parseEmpresa(ResultSet result) throws SQLException{
-        Long id = result.getLong("id_conta");
+        Long idconta = result.getLong("id_conta");
+        Long idusuario = result.getLong("id_usuario");
         String nome = result.getString("nome_conta");
         double saldo = result.getDouble("saldo");
         double limite = result.getDouble("limite");
-        return new Empresa(id, nome, saldo, limite);
+        return new Empresa(idconta,idusuario, nome, saldo, limite);
     }
 
     public List<Empresa> listar() throws SQLException{
